@@ -1,0 +1,19 @@
+<div class="w-full">
+  <label class="text-textColor-light relative">
+    {{ label | translate }}
+    <input [type]="type"
+           [value]="value"
+           autofocus
+           [placeholder]="placeholder | translate"
+           (input)="onInput($event)"
+           (blur)="onTouched()"
+           autocomplete="new-password"
+           class="mt-4 h-52 w-full py-16 pr-40 pl-12 bg-secondary text-textColor-light rounded-8 border border-solid border-transparent focus:border-secondary-medium-gray"
+    >
+    @if (fixedType === 'password') {
+      <span class="eye w-18 h-18 cursor-pointer absolute right-14 bottom-[0px]" [class.close]="type === 'password'" (click)="toggleType()"></span>
+    } @else if (iconClass) {
+      <span (click)="iconClick.emit()" class="w-18 h-18 cursor-pointer absolute right-14 bottom-[0px]" [ngClass]="iconClass"></span>
+    }
+  </label>
+</div>

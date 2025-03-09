@@ -1,0 +1,15 @@
+<div class="w-full">
+  <label class="text-textColor-light">
+    {{ label }}
+    <textarea
+      [value]="value"
+      autofocus
+      [placeholder]="(placeholder | translate) + '...'"
+      (input)="onInput($event)"
+      (blur)="onTouched()"
+      autocomplete="new-password"
+      class="h-full resize-none hide-scrollbar outline-0 p-12
+             text-textColor-dark rounded-8 border border-solid border-transparent"
+    ></textarea>
+  </label>
+</div>

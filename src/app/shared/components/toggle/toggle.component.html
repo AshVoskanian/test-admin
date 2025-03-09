@@ -1,0 +1,9 @@
+<label class="flex items-center cursor-pointer gap-x-10">
+  <input class="hidden checked:bg-primary" type="checkbox" [checked]="value" (change)="onToggleChange()"/>
+  <span class="toggle-slider before:w-22 before:h-22 before:rounded-[50%]
+               before:absolute before:bg-[#fff]
+               before:top-[1px] before:left-[1px] before:transition
+               relative transition ease-in w-48 h-24 bg-secondary-medium-gray rounded-[50px]">
+  </span>
+  <p *ngIf="label" class="text-textColor-light">{{ label | translate}}</p>
+</label>

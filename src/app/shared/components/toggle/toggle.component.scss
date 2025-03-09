@@ -1,0 +1,7 @@
+input:checked + .toggle-slider {
+  background-color: var(--primary); /* Green when active */
+}
+
+input:checked + .toggle-slider:before {
+  transform: translateX(24px); /* Move the switch to the right */
+}

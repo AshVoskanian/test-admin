@@ -1,0 +1,30 @@
+<div class="flex items-center gap-x-6">
+  @if (pages()?.length > 5) {
+    <div class="cursor-pointer hover:scale-110 transition custom-bg-contain
+              h-24 w-24 min-w-24 bg-arrow-primary rotate-90" (click)="toStart()">
+    </div>
+  }
+
+  <div class="flex gap-x-6 w-[184px] overflow-hidden">
+    <ul class=" flex items-center gap-x-6 min-w-full transition-all"
+        [ngStyle]="{transform: 'translateX(' + xOffset() + 'px)'}"
+    >
+      @for (page of pages(); track page) {
+        <li
+          (click)="onPageChange(page)"
+          [class.selected]="currentPage === page"
+          class="h-32 w-32 min-w-32 rounded-8 bg-secondary-medium-gray hover:bg-primary-600 transition flex select-none justify-center items-center cursor-pointer">
+          <p class="text-textColor-light">
+            {{ page }}
+          </p>
+        </li>
+      }
+    </ul>
+  </div>
+
+  @if (pages()?.length > 5) {
+    <div class="cursor-pointer hover:scale-110 transition custom-bg-contain
+              h-24 w-24 min-w-24 bg-arrow-primary rotate-[-90deg]" (click)="toEnd()">
+    </div>
+  }
+</div>

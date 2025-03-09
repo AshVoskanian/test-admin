@@ -1,0 +1,9 @@
+<form class="note shadow-custom" [class.headShake]="required" (submit)="onSubmit($event)">
+  <app-textarea name="note" [(ngModel)]="note" [placeholder]="'GENERAL.ADD_NOTE'"></app-textarea>
+  <div class="flex justify-end items-center py-6 border-text-textColor-light border-t-[1px] bg-center">
+    <div class="h-30 w-30 cursor-pointer custom-bg-contain bg-send hover:scale-110 transition"
+         (click)="btn.click()">
+    </div>
+    <button type="submit" class="hidden" #btn></button>
+  </div>
+</form>

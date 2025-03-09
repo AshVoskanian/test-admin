@@ -1,0 +1,6 @@
+<div class="rounded-[50%] cursor-pointer relative w-32 h-32 custom-bg-cover" appToggleMenu
+     [ngStyle]="{ 'background-image': 'url(' + '../assets/icons/flags/' + translateService.currentLang + '.png' + ')' }">
+  <div class="list w-210 absolute top-40 right-[0]">
+    <app-list [list]="languages()" (selectOption)="changeLang($event)"></app-list>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+{
+  "MENU_ITEMS": [
+    {
+      "title": "Jobs",
+      "icon": "bg-jobs",
+      "route": "",
+      "hide": false
+    },
+    {
+      "title": "Statements",
+      "icon": "bg-check",
+      "route": "",
+      "hide": true
+    }
+  ]
+}

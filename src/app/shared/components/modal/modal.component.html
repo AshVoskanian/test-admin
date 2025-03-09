@@ -1,0 +1,31 @@
+<div class="fixed inset-0 flex items-center justify-center z-[999]" [class.bg-overlay]="bgOverlay" (click)="closeModal()">
+  <div class="w-fit card max-h-[80vh] hide-scrollbar xs:max-h-[90vh] shadow-custom overflow-auto"
+       [animation]="getAnim()" [duration]="0.3" (click)="$event.stopPropagation()">
+    <div class="w-full mb-20 border-b-[1px] border-secondary-medium-gray pb-8 flex justify-between items-center">
+      <p class="text-textColor-light text-20">
+        {{ modalTitle | translate }}
+      </p>
+      <!--  Arrows-->
+      @if (showArrows) {
+        <div class="flex items-center justify-between gap-6">
+          <div class="h-24 w-24 bg-arrow custom-bg-contain rotate-90 cursor-pointer hover:-translate-x-[3px] transition"
+               (click)="prev()"></div>
+          <p class="text-textColor-light text-18">
+            {{ modalService.currentPage }} /
+            {{ modalService.pagesCount }}
+          </p>
+          <div
+            class="h-24 w-24 bg-arrow custom-bg-contain -rotate-90 cursor-pointer hover:translate-x-[3px] transition"
+            (click)="next()"></div>
+        </div>
+      }
+
+      <span class="text-40 cursor-pointer transition text-primary hover:translate-y-[-2px]"
+            (click)="closeModal()">&times;</span>
+    </div>
+
+    <div class="w-full">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

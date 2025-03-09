@@ -1,0 +1,10 @@
+<ul class="w-full bg-secondary-dark rounded-10 overflow-hidden shadow-custom">
+  @for (item of (list() | filter:'!equal':'hide':true); track item.text) {
+    <li class="px-24 py-12 hover:bg-secondary-medium-gray transition duration-300 cursor-pointer"
+        (click)="selectListItem(item)">
+      <p class="text-textColor-light bg-no-repeat bg-right" [ngClass]="item.class">
+        {{ item?.notTranslate ? item.text : (item.text.toUpperCase() | translate) }}
+      </p>
+    </li>
+  }
+</ul>
