@@ -38,6 +38,7 @@ const values = {
   '300': '18.75rem', // 300px
   '350': '21.875rem', // 350px
   '400': '25rem', // 400px
+  '450': '28.125rem', // 450px
   '800': '50rem', // 800px
 };
 
@@ -203,6 +204,9 @@ module.exports = {
           backgroundPosition: 'center',
           backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat'
+        },
+        '.gradient1': {
+          background: 'linear-gradient(to right, #abbaab, #ffffff)'
         }
       };
       addUtilities(newUtilities, ['responsive', 'hover']);

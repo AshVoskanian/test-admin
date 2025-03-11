@@ -1,5 +1,5 @@
-import {Component, EventEmitter, forwardRef, Input, OnInit, Output} from '@angular/core';
-import {NG_VALUE_ACCESSOR} from "@angular/forms";
+import { Component, EventEmitter, forwardRef, inject, Input, OnInit, Output } from '@angular/core';
+import { NG_VALUE_ACCESSOR } from "@angular/forms";
 import {TranslateModule} from "@ngx-translate/core";
 import {NgClass} from "@angular/common";
 
@@ -25,6 +25,7 @@ export class InputComponent implements OnInit {
   @Input() iconClass: string = '';
   @Input() placeholder: string = '';
   @Input() type: 'text' | 'number' | 'checkbox' | 'password' = 'text';
+
 
   fixedType = '';
 
@@ -66,5 +67,9 @@ export class InputComponent implements OnInit {
     if (this.type === "text") {
       this.type = "password"
     }
+  }
+
+  onFocus() {
+
   }
 }

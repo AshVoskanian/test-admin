@@ -1,7 +1,33 @@
-<div class="flex items-center justify-center h-full gradient">
-  <div class="card">
-    <form class="w-400 flex flex-col items-center" [formGroup]="form">
+<div class="flex items-center justify-center h-full gradient1">
+  <div class="card overflow-hidden p-0 shadow-custom1">
+    <div class="flex justify-center py-40 bg-primary-200">
+      <p class="text-32">
+        Login
+      </p>
+    </div>
 
+    <form class="w-450 p-32 flex flex-col gap-y-24 items-center" [formGroup]="form">
+      <div class="w-full">
+        <app-input [placeholder]="'Email'" [iconClass]="'bg-profile'" formControlName="email">
+          <i icon class="fa fa-user"></i>
+          @if (form.get('email').valid) {
+            <span valid class="w-18 custom-bg-contain h-18 cursor-pointer bg-check absolute right-14 bottom-[0px]">
+            </span>
+          }
+        </app-input>
+      </div>
+
+      <div class="w-full">
+        <app-input [placeholder]="'Password'" [iconClass]="'bg-profile'" formControlName="password">
+          <i icon class="fa fa-lock"></i>
+          @if (form.get('password').valid) {
+            <span valid class="w-18 custom-bg-contain h-18 cursor-pointer bg-check absolute right-14 bottom-[0px]">
+            </span>
+          }
+        </app-input>
+      </div>
+
+      <button class="primary" type="submit">Login</button>
     </form>
   </div>
 </div>

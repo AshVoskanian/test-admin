@@ -10,6 +10,7 @@ import {takeUntilDestroyed} from "@angular/core/rxjs-interop";
 import {AuthService} from "../../../shared/services/auth.service";
 import {LocalStorageService} from "../../../shared/services/local-storage.service";
 import {ToastService} from "../../../shared/services/toast-helper-service.service";
+import { NgClass } from "@angular/common";
 
 @Component({
   selector: 'app-auth',
@@ -19,6 +20,7 @@ import {ToastService} from "../../../shared/services/toast-helper-service.servic
     InputComponent,
     ReactiveFormsModule,
     CheckboxComponent,
+    NgClass,
   ],
   templateUrl: './auth.component.html',
   styleUrl: './auth.component.scss'

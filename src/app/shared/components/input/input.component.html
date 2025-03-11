@@ -1,19 +1,19 @@
-<div class="w-full">
+<div class="w-full input-wrapper border-primary-500 border-b-2">
   <label class="text-textColor-light relative">
+    <span class="absolute left-14 top-[50%] translate-y-[-50%]">
+      <ng-content select="[icon]"></ng-content>
+    </span>
     {{ label | translate }}
     <input [type]="type"
            [value]="value"
            autofocus
+           (focus)="onFocus()"
            [placeholder]="placeholder | translate"
            (input)="onInput($event)"
            (blur)="onTouched()"
            autocomplete="new-password"
-           class="mt-4 h-52 w-full py-16 pr-40 pl-12 bg-secondary text-textColor-light rounded-8 border border-solid border-transparent focus:border-secondary-medium-gray"
+           class="mt-4 h-52 w-full py-16 px-50"
     >
-    @if (fixedType === 'password') {
-      <span class="eye w-18 h-18 cursor-pointer absolute right-14 bottom-[0px]" [class.close]="type === 'password'" (click)="toggleType()"></span>
-    } @else if (iconClass) {
-      <span (click)="iconClick.emit()" class="w-18 h-18 cursor-pointer absolute right-14 bottom-[0px]" [ngClass]="iconClass"></span>
-    }
+    <ng-content select="[valid]"></ng-content>
   </label>
 </div>
