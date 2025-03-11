@@ -1,27 +1,4 @@
 @import "mixins";
-@import "variables";
-
-@-webkit-keyframes ripple {
-  from {
-    transform: scale(0);
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    transform: scale(20);
-  }
-}
-
-@keyframes ripple {
-  from {
-    transform: scale(0);
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    transform: scale(20);
-  }
-}
 
 @keyframes headShake {
   0% {

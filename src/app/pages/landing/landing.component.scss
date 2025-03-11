@@ -1,9 +1,0 @@
-.landing-wrapper {
-  &:after {
-    content: "";
-    @apply w-[147vw] h-[100vh] md:w-[70vw] md:h-[110vh] custom-bg-cover bg-alpha_crew_logo fixed top-[-10px] right-[0] z-[-1] rotate-45;
-    background-position: center;
-    background-size: contain;
-    background-attachment: fixed;
-  }
-}

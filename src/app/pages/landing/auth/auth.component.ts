@@ -10,11 +10,6 @@ import {takeUntilDestroyed} from "@angular/core/rxjs-interop";
 import {AuthService} from "../../../shared/services/auth.service";
 import {LocalStorageService} from "../../../shared/services/local-storage.service";
 import {ToastService} from "../../../shared/services/toast-helper-service.service";
-import {TranslateModule} from "@ngx-translate/core";
-import {MatFormField} from "@angular/material/form-field";
-import {MatIcon} from "@angular/material/icon";
-import {MatInput} from "@angular/material/input";
-import {MatButton} from "@angular/material/button";
 
 @Component({
   selector: 'app-auth',
@@ -24,11 +19,6 @@ import {MatButton} from "@angular/material/button";
     InputComponent,
     ReactiveFormsModule,
     CheckboxComponent,
-    TranslateModule,
-    MatFormField,
-    MatIcon,
-    MatInput,
-    MatButton
   ],
   templateUrl: './auth.component.html',
   styleUrl: './auth.component.scss'

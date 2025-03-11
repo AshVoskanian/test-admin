@@ -1,0 +1,195 @@
+:root {
+  --primary-50: #fff9e6;
+  --primary-100: #ffefb3;
+  --primary-200: #ffe680;
+  --primary-300: #ffdc4d;
+  --primary-400: #ffd426;
+  --primary-500: #FFC926; /* Primary color */
+  --primary-600: #e6b222;
+  --primary-700: #cc9f1f;
+  --primary-800: #b38c1c;
+  --primary-900: #997919;
+  --primary-A100: #fff9e6;
+  --primary-A200: #ffefb3;
+  --primary-A400: #ffd426;
+  --primary-A700: #cc9f1f;
+
+  --accent-50: #e0f7fa;
+  --accent-100: #b2ebf2;
+  --accent-200: #80deea;
+  --accent-300: #4dd0e1;
+  --accent-400: #26c6da;
+  --accent-500: #00bcd4; /* Accent color */
+  --accent-600: #00acc1;
+  --accent-700: #0097a7;
+  --accent-800: #00838f;
+  --accent-900: #006064;
+  --accent-A100: #84ffff;
+  --accent-A200: #18ffff;
+  --accent-A400: #00e5ff;
+  --accent-A700: #00b8d4;
+
+  --warn-50: #ffebee;
+  --warn-100: #ffcdd2;
+  --warn-200: #ef9a9a;
+  --warn-300: #e57373;
+  --warn-400: #ef5350;
+  --warn-500: #f44336; /* Warning color */
+  --warn-600: #e53935;
+  --warn-700: #d32f2f;
+  --warn-800: #c62828;
+  --warn-900: #b71c1c;
+  --warn-A100: #ff8a80;
+  --warn-A200: #ff5252;
+  --warn-A400: #ff1744;
+  --warn-A700: #d50000;
+
+  --primary-contrast-50: #000;
+  --primary-contrast-100: #000;
+  --primary-contrast-200: #000;
+  --primary-contrast-300: #000;
+  --primary-contrast-400: #000;
+  --primary-contrast-500: #000;
+  --primary-contrast-600: #fff;
+  --primary-contrast-700: #fff;
+  --primary-contrast-800: #fff;
+  --primary-contrast-900: #fff;
+  --primary-contrast-A100: #000;
+  --primary-contrast-A200: #000;
+  --primary-contrast-A400: #000;
+  --primary-contrast-A700: #fff;
+
+  --accent-contrast-50: #000;
+  --accent-contrast-100: #000;
+  --accent-contrast-200: #000;
+  --accent-contrast-300: #000;
+  --accent-contrast-400: #000;
+  --accent-contrast-500: #000;
+  --accent-contrast-600: #fff;
+  --accent-contrast-700: #fff;
+  --accent-contrast-800: #fff;
+  --accent-contrast-900: #fff;
+  --accent-contrast-A100: #000;
+  --accent-contrast-A200: #000;
+  --accent-contrast-A400: #000;
+  --accent-contrast-A700: #fff;
+
+  --warn-contrast-50: #000;
+  --warn-contrast-100: #000;
+  --warn-contrast-200: #000;
+  --warn-contrast-300: #000;
+  --warn-contrast-400: #000;
+  --warn-contrast-500: #000;
+  --warn-contrast-600: #fff;
+  --warn-contrast-700: #fff;
+  --warn-contrast-800: #fff;
+  --warn-contrast-900: #fff;
+  --warn-contrast-A100: #000;
+  --warn-contrast-A200: #000;
+  --warn-contrast-A400: #000;
+  --warn-contrast-A700: #fff;
+
+  .dark {
+    /* Light theme colors */
+    --primary-50: #FFF7DC;
+    --primary-100: #FFF1C2;
+    --primary-200: #FFE591;
+    --primary-300: #FFD860;
+    --primary-400: #FFCB30;
+    --primary-500: #FFC926; /* Main color */
+    --primary-600: #DBA61F;
+    --primary-700: #B78319;
+    --primary-800: #936012;
+    --primary-900: #6F3E0C;
+
+    --accent-50: #E0F7FA;
+    --accent-100: #B2EBF2;
+    --accent-200: #80DEEA;
+    --accent-300: #4DD0E1;
+    --accent-400: #26C6DA;
+    --accent-500: #00BCD4; /* Accent color */
+    --accent-600: #00ACC1;
+    --accent-700: #0097A7;
+    --accent-800: #00838F;
+    --accent-900: #006064;
+
+    --warn-50: #FFEBEE;
+    --warn-100: #FFCDD2;
+    --warn-200: #EF9A9A;
+    --warn-300: #E57373;
+    --warn-400: #EF5350;
+    --warn-500: #F44336; /* Warning color */
+    --warn-600: #E53935;
+    --warn-700: #D32F2F;
+    --warn-800: #C62828;
+    --warn-900: #B71C1C;
+
+    /* Dark theme colors */
+    --primary-50-dark: #6F3E0C;
+    --primary-100-dark: #936012;
+    --primary-200-dark: #B78319;
+    --primary-300-dark: #DBA61F;
+    --primary-400-dark: #FFC926;
+    --primary-500-dark: #FFCB30;
+    --primary-600-dark: #FFD860;
+    --primary-700-dark: #FFE591;
+    --primary-800-dark: #FFF1C2;
+    --primary-900-dark: #FFF7DC;
+
+    --accent-50-dark: #006064;
+    --accent-100-dark: #00838F;
+    --accent-200-dark: #0097A7;
+    --accent-300-dark: #00ACC1;
+    --accent-400-dark: #00BCD4;
+    --accent-500-dark: #26C6DA;
+    --accent-600-dark: #4DD0E1;
+    --accent-700-dark: #80DEEA;
+    --accent-800-dark: #B2EBF2;
+    --accent-900-dark: #E0F7FA;
+
+    --warn-50-dark: #B71C1C;
+    --warn-100-dark: #C62828;
+    --warn-200-dark: #D32F2F;
+    --warn-300-dark: #E53935;
+    --warn-400-dark: #F44336;
+    --warn-500-dark: #EF5350;
+    --warn-600-dark: #E57373;
+    --warn-700-dark: #EF9A9A;
+    --warn-800-dark: #FFCDD2;
+    --warn-900-dark: #FFEBEE;
+
+    /* Contrast for dark theme */
+    --primary-contrast-50-dark: #FFF;
+    --primary-contrast-100-dark: #FFF;
+    --primary-contrast-200-dark: #FFF;
+    --primary-contrast-300-dark: #FFF;
+    --primary-contrast-400-dark: #FFF;
+    --primary-contrast-500-dark: #FFF;
+    --primary-contrast-600-dark: #000;
+    --primary-contrast-700-dark: #000;
+    --primary-contrast-800-dark: #000;
+    --primary-contrast-900-dark: #000;
+
+    --accent-contrast-50-dark: #FFF;
+    --accent-contrast-100-dark: #FFF;
+    --accent-contrast-200-dark: #FFF;
+    --accent-contrast-300-dark: #FFF;
+    --accent-contrast-400-dark: #FFF;
+    --accent-contrast-500-dark: #FFF;
+    --accent-contrast-600-dark: #000;
+    --accent-contrast-700-dark: #000;
+    --accent-contrast-800-dark: #000;
+    --accent-contrast-900-dark: #000;
+
+    --warn-contrast-50-dark: #FFF;
+    --warn-contrast-100-dark: #FFF;
+    --warn-contrast-200-dark: #FFF;
+    --warn-contrast-300-dark: #FFF;
+    --warn-contrast-400-dark: #FFF;
+    --warn-contrast-500-dark: #FFF;
+    --warn-contrast-600-dark: #000;
+    --warn-contrast-700-dark: #000;
+    --warn-contrast-800-dark: #000;
+    --warn-contrast-900-dark: #000;
+  }
+}
