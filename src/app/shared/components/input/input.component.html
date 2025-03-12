@@ -1,5 +1,5 @@
 <div class="w-full input-wrapper border-primary-500 border-b-2">
-  <label class="text-textColor-light relative">
+  <label class="text-secondary-900 relative">
     <span class="absolute left-14 top-[50%] translate-y-[-50%]">
       <ng-content select="[icon]"></ng-content>
     </span>
@@ -12,7 +12,7 @@
            (input)="onInput($event)"
            (blur)="onTouched()"
            autocomplete="new-password"
-           class="mt-4 h-52 w-full py-16 px-50"
+           class="mt-4 h-52 w-full py-16 px-50 placeholder-secondary-900"
     >
     <ng-content select="[valid]"></ng-content>
   </label>

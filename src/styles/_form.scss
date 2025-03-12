@@ -12,7 +12,7 @@ button {
 
 .ng-touched.ng-invalid:not(form) {
   .input-wrapper {
-    border-color: var(--warn-500) !important;
+    border-color: var(--error-500) !important;
     -webkit-animation-name: headShake;
     animation-name: headShake;
     animation-delay: 0s;

@@ -1,15 +1,17 @@
-<div class="flex items-center justify-center h-full gradient1">
-  <div class="card overflow-hidden p-0 shadow-custom1">
-    <div class="flex justify-center py-40 bg-primary-200">
-      <p class="text-32">
-        Login
-      </p>
-    </div>
+<div class="flex justify-between items-center bg-secondary-900">
+  <div class="w-[60%] h-dvh p-64 items-center bg-secondary-900 left flex justify-center">
+    <div class="w-800 h-dvh custom-bg-contain bg-logo"></div>
+  </div>
 
-    <form class="w-450 p-32 flex flex-col gap-y-24 items-center" [formGroup]="form">
+  <div class="after:absolute overflow-hidden rounded-bl-32 rounded-tl-32 after:left-0 after:top-0 after:bg-bg-transparent
+              after:w-full after:h-full after:backdrop-blur-[4px] justify-center max-w-800
+              relative bg-crew custom-bg-cover h-[100dvh] w-[40%] px-64 flex flex-col">
+    <form class="relative z-20 w-full py-32 flex flex-col gap-y-24 items-center" [formGroup]="form">
+      <p class="text-secondary-100 text-50 uppercase font-bold mb-24 text-shadow">Admin Login</p>
+
       <div class="w-full">
         <app-input [placeholder]="'Email'" [iconClass]="'bg-profile'" formControlName="email">
-          <i icon class="fa fa-user"></i>
+          <i icon class="fa fa-user text-primary-500"></i>
           @if (form.get('email').valid) {
             <span valid class="w-18 custom-bg-contain h-18 cursor-pointer bg-check absolute right-14 bottom-[0px]">
             </span>
@@ -18,8 +20,8 @@
       </div>
 
       <div class="w-full">
-        <app-input [placeholder]="'Password'" [iconClass]="'bg-profile'" formControlName="password">
-          <i icon class="fa fa-lock"></i>
+        <app-input type="password" [placeholder]="'Password'" [iconClass]="'bg-profile'" formControlName="password">
+          <i icon class="fa fa-lock text-primary-500"></i>
           @if (form.get('password').valid) {
             <span valid class="w-18 custom-bg-contain h-18 cursor-pointer bg-check absolute right-14 bottom-[0px]">
             </span>

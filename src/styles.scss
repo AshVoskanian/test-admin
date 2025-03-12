@@ -23,6 +23,7 @@ html, body {
 body {
   margin: 0;
   font-family: Inter, "Helvetica Neue", sans-serif;
+  background: var(--bg-color);
 
   &::-webkit-scrollbar {
     display: none;
